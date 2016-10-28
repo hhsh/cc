@@ -1,0 +1,1 @@
+int prit(int val);
