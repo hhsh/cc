@@ -8,4 +8,5 @@ int nmain()
 
     printf("There is no main function\n");
     exit(0);
+    //return 0;
 }
