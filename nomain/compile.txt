@@ -1,0 +1,1 @@
+chmain.c  -o chmain -Wall -e nmain -nostartfiles
