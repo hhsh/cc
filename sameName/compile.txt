@@ -1,1 +1,1 @@
-gcc -o m -Wall m.c c*.c
+ gcc -o m -Wall m.c c*.c
