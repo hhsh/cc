@@ -2,7 +2,7 @@
 #include<stdio.h>
 
  #include <ctype.h>
-int SIZE = 1000;
+int SIZE = 5;
 
 
 int getch(void);
@@ -27,12 +27,23 @@ int getint(int *pn)
     if(c != EOF)
         ungetch(c);
     return c ;
+}
+void pr(int arr [])
+{
+    printf("\n-------\n");
+    int i=0;
+    for(;i<SIZE;i++)
+        printf("%d\n",arr[i]);
+    printf("\n-------\n");
+
 } 
  int main()
 {
 
     int n,arr[SIZE];//,getint(int * );
+    pr(arr);
     for(n=0;n<SIZE && getint(&arr[n]) != EOF;n++)
         ;
+    pr(arr);
     return 0;
 }
