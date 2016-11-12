@@ -31,7 +31,7 @@ int getint(int *pn)
  int main()
 {
 
-    int n,arr[SIZE],getint(int * );
+    int n,arr[SIZE];//,getint(int * );
     for(n=0;n<SIZE && getint(&arr[n]) != EOF;n++)
         ;
     return 0;

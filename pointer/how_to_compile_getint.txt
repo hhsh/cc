@@ -1,0 +1,1 @@
+gcc -o getint ../calulator/getch.c -Wall getint.c
