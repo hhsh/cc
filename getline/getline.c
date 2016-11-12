@@ -3,11 +3,15 @@
 
 int mygetline(char s[],int limit);
 
-main()
+int main()
 {
     char line [MAXLINE];
     mygetline(line,MAXLINE);
-    printf("%s",&line);
+    printf("%s",line);
+    //printf("%s",&line); //this is also ok,but compiler will warn.
+    char *s = "hello";
+    printf("%s\n",s);
+    return 0;
 }
 
 int mygetline(char s[],int limit)
