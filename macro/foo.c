@@ -4,6 +4,7 @@
 #define myMax(a,b)  a>b?a:b
 #define sq(x) x * x
 #define dbprint(expr) printf(#expr " = %g\n" ,expr)
+#define paste(a,b) a ## b
 int main()
 {
     int mx = myMax(40,30);
@@ -13,5 +14,7 @@ int main()
     printf("hello  " "world " "\n");
     double d = 5.66;
     dbprint(d);
+    char * name3 = "learn";
+    printf("%s\n",paste(name,3));
     return 0;
 }
