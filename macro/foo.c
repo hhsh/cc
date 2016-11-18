@@ -16,5 +16,10 @@ int main()
     dbprint(d);
     char * name3 = "learn";
     printf("%s\n",paste(name,3));
+
+    char a = 'u';
+    char *s = &a;
+    int b = *(int *)s;//quote from va_arg(ap,t)
+    printf("%d\n",b);
     return 0;
 }
