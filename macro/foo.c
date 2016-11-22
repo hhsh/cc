@@ -5,6 +5,8 @@
 #define sq(x) x * x
 #define dbprint(expr) printf(#expr " = %g\n" ,expr)
 #define paste(a,b) a ## b
+
+int vgg(int,...);
 int main()
 {
     int mx = myMax(40,30);
@@ -21,5 +23,12 @@ int main()
     char *s = &a;
     int b = *(int *)s;//quote from va_arg(ap,t)
     printf("%d\n",b);
+    
+    vgg(100,200,300);
+    return 0;
+}
+int vgg(int v,...)
+{
+    printf("vgg %d\n",v);
     return 0;
 }

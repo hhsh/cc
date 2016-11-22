@@ -15,7 +15,7 @@ int main(){
         struct B * b;
     } a = {
         102,
-        NULL,//&b is not work.
+        NULL,//&b is not work util now.
     };
     struct B { 
         int a;

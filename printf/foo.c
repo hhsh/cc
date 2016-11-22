@@ -11,5 +11,11 @@ int main()
     int i =0;
     for(i=0;i<10;i++)
     printf("%15g",562.123456789);
+    int rs = 0;
+   ( rs +=a) - 5;
+    char * s = "a";
+    int q = * (int *)(s+=1)-1;
+    printf("\nrs=%d\n",rs);
+    printf("q=%d\n",q);
     return 0;
 }
