@@ -15,16 +15,19 @@ int main(){
         struct B * b;
     } a = {
         102,
-        NULL
+        NULL,//&b is not work.
     };
     struct B { 
         int a;
         struct A * b;
     }b = {
         156,
-        &a
+        &a,
     };
-    //printf("A.a %d\n",a.a);
+    a.b = &b;
+    printf("A.a %d\n",a.a);
+    printf("A.b %d\n",a.b->a);
+
     printf("B.a %d\n",b.a);
     printf("B.b %d\n",b.b->a);
     return 0;
